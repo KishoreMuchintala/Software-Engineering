@@ -1,0 +1,65 @@
+.product-list-page {
+  padding: 40px;
+  background-color: black; /* Dark background */
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.product-list-page h2 {
+  font-size: 2.5em;
+  color: #00ff00; /* Razer green */
+  margin-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px; /* Space between filters */
+}
+
+.filter-price,
+.filter-platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-price label,
+.filter-platform label {
+  margin-bottom: 5px;
+  color: #00ff00; /* Razer green for labels */
+}
+
+.filter-price input,
+.filter-platform select {
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #00ff00; /* Razer green border */
+  border-radius: 5px;
+  background-color: #333; /* Dark background for input */
+  color: #fff; /* White text for input */
+}
+
+.filter-options button {
+  padding: 10px 20px;
+  background-color: #00ff00; /* Razer green */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-options button:hover {
+  background-color: #00cc00; /* Darker green on hover */
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
