@@ -40,7 +40,7 @@ body {
 .products-section h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #00ff00; /* Vibrant green text */
+    color: #00ff00; 
 }
 
 .product-list {
@@ -50,10 +50,10 @@ body {
 }
 
 .product {
-    background-color: #111; /* Dark background for product */
+    background-color: #111;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-    width: 22%; /* Set width for side-by-side display */
+    width: 22%; 
     padding: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -61,7 +61,7 @@ body {
 }
 
 .product:hover {
-    transform: scale(1.05); /* Hover effect */
+    transform: scale(1.05); 
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
 }
 
@@ -74,16 +74,16 @@ body {
 .product h3 {
     font-size: 1.5em;
     margin-top: 15px;
-    color: #00ff00; /* Vibrant green for titles */
+    color: #00ff00; 
 }
 
 .product p {
     font-size: 1.1em;
-    color: #bfbfbf; /* Lighter text for description */
+    color: #bfbfbf; 
 }
 
 .footer-section {
-    background-color: #222; /* Darker footer */
+    background-color: #222; 
     color: #fff;
     padding: 20px;
     width: 100%;

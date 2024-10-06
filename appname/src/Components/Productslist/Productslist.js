@@ -8,7 +8,7 @@ const ProductList = ({ addToCart, addToWishlist }) => {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(Infinity);
   const [selectedPlatform, setSelectedPlatform] = useState('');
-
+//some lines from here are generated from chatgpt
   useEffect(() => {
     fetch('./db/products.json')
       .then((response) => response.json())

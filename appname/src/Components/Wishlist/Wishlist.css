@@ -32,7 +32,7 @@
   
   .wishlist-name {
     font-size: 1.5em;
-    color: #00ff00; /* Razer green */
+    color: #00ff00; 
   }
   
   .wishlist-description,
@@ -43,8 +43,8 @@
   
   .remove-button,
   .move-button {
-    background-color: #ff4b2b; /* Red for remove button */
-    color: white;
+    background-color: #00FF00; 
+    color: black;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -53,8 +53,10 @@
     margin-top: 10px;
   }
   
-  .remove-button:hover,
-  .move-button:hover {
+  .remove-button:hover {
     background-color: #ff416c;
   }
   
+  .move-button:hover{
+    background-color: #32CD32;
+  }

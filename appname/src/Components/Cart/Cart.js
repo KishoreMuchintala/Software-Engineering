@@ -11,7 +11,7 @@ const Cart = () => {
 
   const navigate = useNavigate();
 
-  // Load cart items from localStorage when the component mounts
+ //some lines from here are generated from chatgpt
   useEffect(() => {
     const storedCart = localStorage.getItem('cart');
     if (storedCart) {
@@ -45,23 +45,23 @@ const Cart = () => {
     }
   };
 
-  // Calculate the total price of items in the cart
+  
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
-  // Calculate tax (10 cents for every $10, or 1% of the total price)
+  
   const tax = totalPrice * 0.01;
 
-  // Calculate final total (total price + tax)
+  
   const finalTotal = totalPrice + tax;
 
-  // Handle the purchase
+  
   const handleBuy = () => {
-    // You can add your purchase logic here (e.g., API call)
+    
     alert(`Thank you for your purchase! Total amount: $${finalTotal.toFixed(2)}`);
     
-    // Clear the cart after purchase
+    
     setCartItems([]);
-    localStorage.setItem('cart', JSON.stringify([])); // Clear localStorage cart
+    localStorage.setItem('cart', JSON.stringify([])); 
   };
 
   return (
@@ -82,8 +82,8 @@ const Cart = () => {
                     onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
                   />
                 </p>
-                <button onClick={() => removeFromCart(item.id)}>Remove</button>
-                <button onClick={() => moveToWishlist(item.id)}>Move to Wishlist</button>
+                <button className="remove" onClick={() => removeFromCart(item.id)}>Remove</button>
+                <button className='movetowishlist' onClick={() => moveToWishlist(item.id)}>Move to Wishlist</button>
               </div>
             </div>
           ))}
@@ -97,7 +97,7 @@ const Cart = () => {
       ) : (
         <p>Your cart is empty.</p>
       )}
-      <button onClick={() => navigate('/products')}>Continue Shopping</button>
+      <button className="ContinueShopping" onClick={() => navigate('/products')}>Continue Shopping</button>
     </div>
   );
 };

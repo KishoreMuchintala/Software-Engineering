@@ -1,23 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import bodyImage from '../../Picture/Valorant.png';
-import './Home.css'
+import React from 'react';
+import './Home.css';
 
-const Home =() => {
-    return(
-        <div className="home">
+const Home = () => {
+  return (
+    <div className="home">
       <header className="header">
         <h1>Gaming Verse</h1>
-        <p>Get into the universe of gaming !</p>
+        <p>Get into the universe of gaming!</p>
       </header>
 
       <section className="products-section">
-        
-
         <div className="product-list">
           {/* PS5 Section */}
           <div className="product">
             <img
-              src="https://example.com/ps5.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/57/PlayStation_5_logo.svg"
               alt="PlayStation 5"
               className="product-image"
             />
@@ -28,7 +25,7 @@ const Home =() => {
           {/* Xbox Section */}
           <div className="product">
             <img
-              src="https://example.com/xbox.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Xbox_one_logo.svg/1200px-Xbox_one_logo.svg.png"
               alt="Xbox Series X"
               className="product-image"
             />
@@ -39,7 +36,7 @@ const Home =() => {
           {/* PC Section */}
           <div className="product">
             <img
-              src="https://example.com/pc.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PC_gaming.svg/1200px-PC_gaming.svg.png"
               alt="PC Gaming"
               className="product-image"
             />
@@ -50,7 +47,7 @@ const Home =() => {
           {/* Nintendo Section */}
           <div className="product">
             <img
-              src="https://example.com/nintendo.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png"
               alt="Nintendo Switch"
               className="product-image"
             />
@@ -61,11 +58,10 @@ const Home =() => {
       </section>
 
       <footer className="footer-section">
-        <p>&copy; created by Prem sai Potukuchi. submitted to Prof M.Chen.</p>
+        <p>&copy; created by Prem Sai Potukuchi. Submitted to Prof M. Chen.</p>
       </footer>
     </div>
-    )
-}
-
+  );
+};
 
 export default Home;

@@ -5,10 +5,10 @@ import './Wishlist.css';
 const Wishlist = () => {
   const location = useLocation();
   
-  // Initialize wishlist state
+  //some lines from here are generated from chatgpt
   const [wishlist, setWishlist] = useState(location.state?.wishlist || []);
 
-  // Load wishlist from localStorage when the component mounts
+  
   useEffect(() => {
     const storedWishlist = localStorage.getItem('wishlist');
     if (storedWishlist) {
@@ -16,35 +16,35 @@ const Wishlist = () => {
     }
   }, []);
 
-  // Remove item from wishlist
+
   const removeFromWishlist = (productId) => {
     const updatedWishlist = wishlist.filter(item => item.id !== productId);
-    setWishlist(updatedWishlist); // Update state
+    setWishlist(updatedWishlist); 
     localStorage.setItem('wishlist', JSON.stringify(updatedWishlist)); // Persist updated wishlist
   };
 
-  // Move item to cart
+  
   const moveToCart = (product) => {
     const storedCart = localStorage.getItem('cart');
     let cart = storedCart ? JSON.parse(storedCart) : [];
 
-    // Check if product already exists in the cart
+    
     const existingProduct = cart.find(item => item.id === product.id);
     if (existingProduct) {
-      // Update quantity if it already exists in the cart
+      //some lines from here are generated from chatgpt
       cart = cart.map(item =>
         item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
       );
     } else {
-      // Add product to cart with quantity 1
+      
       cart = [...cart, { ...product, quantity: 1 }];
     }
 
-    // Update the cart in localStorage
+    
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    // Remove the product from the wishlist
-    removeFromWishlist(product.id); // Update state and localStorage for wishlist
+    
+    removeFromWishlist(product.id); 
   };
 
   return (

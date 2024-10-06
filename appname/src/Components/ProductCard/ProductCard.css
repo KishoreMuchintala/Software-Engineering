@@ -16,20 +16,26 @@
 }
 
 .product-image {
-  max-width: 100%;
-  height: auto;
+  width: 180px; /* Set a fixed width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure responsiveness */
   border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover; /* Ensures image doesn't stretch or distort */
 }
+
 
 .product-name {
   font-size: 1.5em;
   margin-top: 15px;
-  color: #00FF00; /* Razer green color for product name */
+  color: #00FF00;
+  cursor: pointer;
 }
 
 .product-description {
   font-size: 1.1em;
-  color: #ccc; /* Lighter text for description */
+  color: #ccc;
+  
 }
 
 .product-price {
@@ -64,3 +70,5 @@
 .wishlist-button:hover {
   background-color: #32CD32; /* Lighter green shade on hover */
 }
+
+

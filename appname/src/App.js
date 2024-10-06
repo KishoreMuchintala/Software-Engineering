@@ -54,6 +54,8 @@ function App() {
     }
   };
 
+  
+
   return (
     <>
       <div className='main_nav'>
