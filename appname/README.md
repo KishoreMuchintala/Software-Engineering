@@ -29,7 +29,7 @@ This gaming website allows users to explore and manage their gaming experience b
 - **Frontend**: React.js
 - **Styling**: CSS
 - **Data Management**: LocalStorage for cart and wishlist data
-- **Data Source**: JSON file located at `src/db/products.json`
+- **Data Source**: JSON file located at `public/db/products.json`
 
 ## Contributing
 If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.S
