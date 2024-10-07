@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProductCard.css';
 import { useNavigate } from 'react-router-dom';
+//contains few gen ai content
 
 const ProductCard = ({ product, addToCart, addToWishlist }) => {
   const navigate = useNavigate();
