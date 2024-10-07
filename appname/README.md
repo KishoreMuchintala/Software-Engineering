@@ -1,4 +1,4 @@
-# Gaming Website
+# Gaming Verse
 
 ## Overview
 This gaming website allows users to explore and manage their gaming experience by providing access to a range of products. With a vibrant black theme, the site offers a user-friendly interface for navigating between product lists, cart, and wishlist pages.
