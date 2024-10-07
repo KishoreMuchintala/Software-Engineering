@@ -32,10 +32,7 @@ This gaming website allows users to explore and manage their gaming experience b
 - **Data Source**: JSON file located at `src/db/products.json`
 
 ## Contributing
-If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.
-
-## License
-This project is licensed under the MIT License.
+If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.S
 
 ## Acknowledgments
 - Some content in this project includes generative AI elements. 
