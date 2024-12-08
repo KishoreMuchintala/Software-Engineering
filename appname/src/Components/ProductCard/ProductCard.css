@@ -1,0 +1,74 @@
+.product-card {
+  background-color: #222; /* Dark background for product */
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  width: 22%; /* Set width for side-by-side display */
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff; /* White text for better readability */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Hover effect */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+.product-image {
+  width: 180px; /* Set a fixed width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure responsiveness */
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover; /* Ensures image doesn't stretch or distort */
+}
+
+
+.product-name {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #00FF00;
+  cursor: pointer;
+}
+
+.product-description {
+  font-size: 1.1em;
+  color: #ccc;
+  
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #00FF00; /* Razer green color for price */
+}
+
+.product-platform {
+  font-size: 1em;
+  color: #aaa; /* Lighter text for platform */
+  margin-bottom: 10px; /* Spacing between platform and buttons */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.product-button,
+.wishlist-button {
+  background-color: #00FF00; /* Razer green for buttons */
+  color: black; /* Black text for better contrast */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px; /* Button padding */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-button:hover,
+.wishlist-button:hover {
+  background-color: #32CD32; /* Lighter green shade on hover */
+}
+
+

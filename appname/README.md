@@ -14,7 +14,7 @@ This project is a fully functional e-commerce website where users can explore pr
 - **Backend**: Express.js, Node.js
 - **Database**: MongoDB Atlas
 - **Styling**: CSS
-- **Deployment**: PM2 (process management, AWS EC2)
+- **Deployment**: PM2 (process management, AWS EC2 pending)
 
 ## API Overview
 The backend provides a set of RESTful API endpoints to support interactions for:
@@ -28,7 +28,7 @@ The backend provides a set of RESTful API endpoints to support interactions for:
 - cd appname
 - npm install
 - npm start
-- Access the application at: http://localhost:5000/
+- Access the application at: http://localhost:3000/
 
 - Backend (Express.js)
 - cd server
@@ -42,7 +42,7 @@ The backend provides a set of RESTful API endpoints to support interactions for:
 - docker-compose up -d
 
 ## Accessing the Application
-- Frontend Web Address: http://34.226.191.216:5000
+- Frontend Web Address: http://34.226.191.216:3000
 - API Endpoint: http://34.226.191.216:5000/api
 - Deployed EC2 IP Address: 34.226.191.216
 
@@ -54,8 +54,6 @@ The backend provides a set of RESTful API endpoints to support interactions for:
 ## Project Goals
 This project aims to provide a comprehensive shopping experience by combining a responsive frontend with a robust backend. The integration of MongoDB Atlas allows for reliable data persistence, while the API-driven structure facilitates smooth communication between the frontend and backend.
 
-
 ## Acknowledgments
 - This project incorporates inspiration from the e-commerce community and contributions from team members and resources.
 - Generative AI was used where noted for certain code components.
-

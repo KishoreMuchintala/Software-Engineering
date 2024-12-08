@@ -1,0 +1,65 @@
+.product-list-page {
+  padding: 40px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.product-list-page h2 {
+  font-size: 2.5em;
+  color: #00ff00; 
+  margin-bottom: 30px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px; 
+}
+
+.filter-price,
+.filter-platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-price label,
+.filter-platform label {
+  margin-bottom: 5px;
+  color: #00ff00; 
+}
+
+.filter-price input,
+.filter-platform select {
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #00ff00; 
+  border-radius: 5px;
+  background-color: #333; 
+  color: #fff; 
+}
+
+.filter-options button {
+  padding: 10px 20px;
+  background-color: #00ff00; 
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-options button:hover {
+  background-color: #00cc00; 
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

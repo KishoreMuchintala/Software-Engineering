@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a0a0a; /* Dark background */
+    padding: 1rem 2rem;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: sticky; /* Sticks to the top */
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.store_name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff00; /* Vibrant green */
+    padding-left: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.store_name:hover {
+    color: #00cc00; /* Slightly darker green on hover */
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem; /* Space between items */
+    margin-right: 2rem;
+}
+
+.nav_list li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem; /* Padding for clickable area */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav_list li a:hover {
+    background-color: rgba(0, 255, 0, 0.3); /* Light green background on hover */
+    color: #00ff00; /* Vibrant green text on hover */
+}
+
+.nav_div {
+    display: flex;
+    align-items: center;
+    position: relative; /* Position relative for search input */
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    border: 2px solid #00ff00; /* Border matching the theme */
+    border-radius: 5px;
+    background-color: #1c1c1c; /* Slightly lighter background */
+    color: #fff; /* White text */
+    transition: border-color 0.3s;
+}
+
+.search-input::placeholder {
+    color: #bbb; /* Light gray placeholder */
+}
+
+.search-input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #00cc00; /* Change border color on focus */
+}
