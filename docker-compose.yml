@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+    ports:
+      - '5000:5000'
+    depends_on:
+      - mongodb
+    env_file:
+      - ./server/.env
+    environment:
+      - MONGO_URI=mongodb+srv://kishoremuchinthala:test1234@ecommerce.g0rig.mongodb.net/test?retryWrites=true&w=majority&appName=Ecommerce
+    restart: always
+
+  mongodb:
+    image: mongo:5.0
+    container_name: mongodb
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    restart: always
+
+
+  caddy:
+    image: caddy:2
+    container_name: caddy
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy-data:/data
+      - caddy-config:/config
+    restart: always
+
+volumes:
+  mongo-data:
+  caddy-data:
+  caddy-config:

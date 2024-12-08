@@ -1,39 +1,59 @@
-# Gaming Verse
+# E-Commerce Product Page - Gaming verse
 
 ## Overview
-This gaming website allows users to explore and manage their gaming experience by providing access to a range of products. With a vibrant black theme, the site offers a user-friendly interface for navigating between product lists, cart, and wishlist pages.
-
-## User Stories
-1. **Navigation**: Users can easily navigate between the product list, cart, and wishlist pages.
-2. **Product Listing**: Users can view a list of available products.
-3. **Product Details**: Users can see detailed information about the selected product.
-4. **Add to Cart**: Users can add products to their shopping cart.
-5. **Update Cart Quantity**: Users can update the quantity of items in their cart.
-6. **Remove from Cart**: Users can remove items from their cart.
-7. **Total Cost**: Users can view the total cost of items in their cart.
-8. **Move Between Cart and Wishlist**: Users can move items between their cart and wishlist.
-9. **Add to Wishlist**: Users can add items to their wishlist.
-10. **Remove from Wishlist**: Users can remove items from their wishlist.
-
-### Optional User Stories (Bonus)
-1. **Search/Filter Products**: Users can search or filter products by name or price.
-2. **Persist Cart Items**: Items in the cart persist even after refreshing the page.
-3. **Persist Wishlist Items**: Items in the wishlist persist even after refreshing the page.
+This project is a fully functional e-commerce website where users can explore products, add items to their cart or wishlist, and manage their shopping experience seamlessly. Built with a React frontend and an Express.js backend, the application uses MongoDB Atlas to persistently store product, cart, and wishlist data. The interface is user-friendly, allowing easy navigation and interaction with various features.
 
 ## Features
-- **Dynamic Product Listings**: Easily updated product information sourced from a JSON file.
-- **LocalStorage Management**: Cart and wishlist data is stored in localStorage to ensure persistence.
-- **User-friendly Interface**: Easy navigation between different sections of the site.
+- **Product Listing and Details**: Users can view all available products and get detailed information on each item.
+- **Cart Functionality**: Users can add items to the cart, adjust quantities, and remove items as needed.
+- **Wishlist Functionality**: Users can add items to their wishlist and easily move items between the wishlist and cart.
+- **Data Persistence**: All cart and wishlist items are saved in MongoDB Atlas, ensuring data is available across sessions.
 
 ## Tech Stack
 - **Frontend**: React.js
+- **Backend**: Express.js, Node.js
+- **Database**: MongoDB Atlas
 - **Styling**: CSS
-- **Data Management**: LocalStorage for cart and wishlist data
-- **Data Source**: JSON file located at `public/db/products.json`
+- **Deployment**: PM2 (process management, AWS EC2 pending)
 
-## Contributing
-If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.S
+## API Overview
+The backend provides a set of RESTful API endpoints to support interactions for:
+- **Products**: Retrieve, add, update, and delete product listings.
+- **Cart**: Manage items in the cart, including adding, updating quantities, and removing items.
+- **Wishlist**: Manage items in the wishlist and move items between the wishlist and cart.
+
+## Steps to Run 
+## Locally
+- Frontend (React)
+- cd appname
+- npm install
+- npm start
+- Access the application at: http://localhost:3000/
+
+- Backend (Express.js)
+- cd server
+- npm install
+- node app.js
+- Access the API at: http://localhost:5000
+##
+
+## Deployment Instructions
+- docker-compose build
+- docker-compose up -d
+
+## Accessing the Application
+- Frontend Web Address: http://34.226.191.216:3000
+- API Endpoint: http://34.226.191.216:5000/api
+- Deployed EC2 IP Address: 34.226.191.216
+
+## MongoDB Initialization
+- MongoDB initialization scripts are stored in the mongo-init directory.
+- The docker-compose.yml automatically initializes MongoDB with predefined collections.
+
+
+## Project Goals
+This project aims to provide a comprehensive shopping experience by combining a responsive frontend with a robust backend. The integration of MongoDB Atlas allows for reliable data persistence, while the API-driven structure facilitates smooth communication between the frontend and backend.
 
 ## Acknowledgments
-- Some content in this project includes generative AI elements. 
-- Thank you to all contributors and the gaming community for inspiration.
+- This project incorporates inspiration from the e-commerce community and contributions from team members and resources.
+- Generative AI was used where noted for certain code components.

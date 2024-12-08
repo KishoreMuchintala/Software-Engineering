@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Products.css';
 import ProductCard from '../ProductCard/ProductCard';
+import { fetchProducts } from '../../api/api'; // Import the API function
 
 const ProductList = ({ addToCart, addToWishlist, searchTerm }) => {
     const [products, setProducts] = useState([]);
@@ -10,13 +11,17 @@ const ProductList = ({ addToCart, addToWishlist, searchTerm }) => {
     const [selectedPlatform, setSelectedPlatform] = useState('');
 
     useEffect(() => {
-        fetch('./db/products.json')
-            .then((response) => response.json())
-            .then((data) => {
+        const loadProducts = async () => {
+            try {
+                const data = await fetchProducts(); // Fetch products from backend
                 setProducts(data);
                 setFilteredProducts(data);
-            })
-            .catch((error) => console.error('Error fetching products:', error));
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        };
+
+        loadProducts();
     }, []);
 
     const filterProducts = () => {

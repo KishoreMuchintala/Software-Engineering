@@ -1,0 +1,17 @@
+{
+    email premsai.potukuchi@gmail.com
+}
+
+# Frontend React app on port 3000
+http://34.226.191.216:3000 {
+    root * /server/build  # Path to the React build folder
+    file_server           # Serve static files
+
+    # Fallback for React app routes
+    try_files {path} /index.html
+}
+
+# Backend API remains on port 5000
+http://34.226.191.216:5000 {
+    reverse_proxy /api/* app:5000  # Forward API requests to the backend
+}

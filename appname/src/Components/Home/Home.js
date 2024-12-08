@@ -58,7 +58,7 @@ const Home = () => {
       </section>
 
       <footer className="footer-section">
-        <p>&copy; created by Prem Sai Potukuchi. Submitted to Prof M. Chen.</p>
+        <p></p>
       </footer>
     </div>
   );
